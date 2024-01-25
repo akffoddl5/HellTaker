@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal_git\\helltaker\\helltaker\\source\\helltaker\\helltaker.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal_git\\helltaker\\helltaker\\intermediate\\build\\win64\\x64\\helltakereditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\unreal_git\\helltaker\\helltaker\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\helltaker\\definitions.helltaker.h",
+            "c:\\unreal_git\\helltaker\\helltaker\\source\\helltaker\\helltaker.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

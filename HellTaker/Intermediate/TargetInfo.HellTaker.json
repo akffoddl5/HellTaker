@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "HellTaker",
+			"Path": "..\\Source\\HellTaker.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "HellTakerEditor",
+			"Path": "..\\Source\\HellTakerEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
