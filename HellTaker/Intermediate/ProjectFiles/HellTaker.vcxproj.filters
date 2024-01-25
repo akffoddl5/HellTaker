@@ -60,5 +60,11 @@
     <ClInclude Include="..\..\Source\HellTaker\HellTakerGameMode.h">
       <Filter>Source\HellTaker</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\HellTaker\MyWidgetComponent.cpp">
+      <Filter>Source\HellTaker</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HellTaker\MyWidgetComponent.h">
+      <Filter>Source\HellTaker</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
