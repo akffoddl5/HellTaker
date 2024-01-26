@@ -26,8 +26,9 @@ public:
 	FVector Init_Pos;
 	void StageAdapt(const TArray<TArray<int>>& mp, FVector Init_Pos, std::pair<int,int> Player_pos);
 	int Current_Count = 0;
-
 	
+	UFUNCTION(BlueprintImplementableEvent)
+	void SetWidgetNum(int Val);
 
 protected:
 	virtual void BeginPlay() override;

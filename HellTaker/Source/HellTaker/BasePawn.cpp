@@ -23,7 +23,7 @@ void ABasePawn::BeginPlay()
 	Super::BeginPlay();
 	HellTakerGameMode = Cast<AHellTakerGameMode>(UGameplayStatics::GetGameMode(this));
 	Desination_Pos = GetActorLocation();
-
+	
 	PaperFlipbookComponent = Cast<UPaperFlipbookComponent>(GetComponentByClass(UPaperFlipbookComponent::StaticClass()));
 
 	if(PaperFlipbookComponent)
@@ -104,6 +104,7 @@ void ABasePawn::NeedPosition(std::pair<int,int> Delta)
 	if(Mode==1)
 	{
 		HellTakerGameMode->Current_Count--;
+		HellTakerGameMode->SetWidgetNum(HellTakerGameMode->Current_Count);
 		FVector Delta_Vector(80* Delta.first,0,80 * Delta.second);
 		
 		//FVector Delta_Vector(0,0,0);
@@ -122,7 +123,6 @@ void ABasePawn::NeedPosition(std::pair<int,int> Delta)
 			PaperFlipbookComponent->Play();
 			
 			//PaperFlipbookComponent->OnFinishedPlaying.AddDynamic(this, &ABasePawn::OnAnimationFinishedPlaying_Move);
-			
 		}
 
 		

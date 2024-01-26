@@ -13,5 +13,7 @@ UCLASS()
 class HELLTAKER_API UMyWidgetComponent : public UWidgetComponent
 {
 	GENERATED_BODY()
+
+	
 	
 };

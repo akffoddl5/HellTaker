@@ -13,7 +13,7 @@ AHellTakerGameMode::AHellTakerGameMode()
 void AHellTakerGameMode::BeginPlay()
 {
 	GameInit_By_BluePrint();
-
+	
 	StageInit();
 }
 
@@ -33,7 +33,7 @@ int AHellTakerGameMode::CheckMove(std::pair<int,int> Delta)
 		Player_Pos = Next;
 		return 1;
 	}
-
+	
 	return 0;
 }
 
@@ -55,6 +55,7 @@ void AHellTakerGameMode::StageAdapt(const TArray<TArray<int>>& _mp , FVector _In
 void AHellTakerGameMode::Stage1_Init()
 {
 	Current_Count = 23;
+	SetWidgetNum(Current_Count);
 	Stage1.SetNum(7);
 	for(int i=0;i<Stage1.Num();i++)
 	{
